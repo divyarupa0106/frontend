@@ -7,7 +7,7 @@ function Home() {
 
   const handleGet = async () => {
     try {
-      const resp = await axios.get("http://localhost:3000/cars");
+      const resp = await axios.get("https://backend-i3mp.onrender.com/cars");
       console.log(resp.data);
       setData(resp.data);
       setMsg(resp.data.msg);

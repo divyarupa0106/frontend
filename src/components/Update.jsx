@@ -12,7 +12,7 @@ function Update() {
 
   const handlePut = async () => {
     try {
-      const resp = await axios.put(`http://localhost:3000/cars/${car.id}`, {
+      const resp = await axios.put(`https://backend-i3mp.onrender.com/cars/${car.id}`, {
         name: car.name,
         qty: car.qty,
       });

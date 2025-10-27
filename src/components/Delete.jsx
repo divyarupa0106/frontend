@@ -12,7 +12,7 @@ function Delete() {
     }
 
     try {
-      const resp = await axios.delete(`http://localhost:3000/cars/${carId}`);
+      const resp = await axios.delete(`https://backend-i3mp.onrender.com/cars/${carId}`);
       setMsg(resp.data.msg);
       setCarId("");
     } catch (e) {

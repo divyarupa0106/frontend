@@ -16,7 +16,7 @@ function Add() {
     }
 
     try {
-      const resp = await axios.post("http://localhost:3000/cars", {
+      const resp = await axios.post("https://backend-i3mp.onrender.com/cars", {
         id: parseInt(car.id),
         name: car.name.trim(),
         qty: parseInt(car.qty),
